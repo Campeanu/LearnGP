@@ -18,7 +18,6 @@ int main()
 {
     // glfw: initialize and configure
     // ------------------------------
-	
     if (!glfwInit()) 
     {
         std::cout << "Failed to initializate GLFW" << std::endl; 
@@ -55,13 +54,18 @@ int main()
 	// -----------
 	while (!glfwWindowShouldClose(window))
 	{
-		// glfw: Clear the screen
-		//-----------------------
-		glClear(GL_COLOR_BUFFER_BIT);
-
 		// input
 		// -----
 		processInput(window);
+		
+		// render
+		// ------
+		// This will result in a dark green-blueish color 
+		// ----------------------------------------------
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+		// glfw: Clear the screen
+		// ----------------------
+		glClear(GL_COLOR_BUFFER_BIT);
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
 		// -------------------------------------------------------------------------------
