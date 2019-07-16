@@ -65,23 +65,23 @@ if(ParentDirectory STREQUAL "")
     # Suppress Microsoft warnings about functions being unsafe.
     add_definitions(-D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS)
     
+    
+    # ------------------------ Set here a costum variable for libraries path: ------------------------
+    set(librariesPath "vendor")
+    # ------------------------ Set here a costum variable for libraries path: ------------------------
+    
+
     # Google Test
     set(BUILD_GTEST ON  CACHE BOOL "Builds the googletest subproject" FORCE)
     set(BUILD_GMOCK OFF CACHE BOOL "Builds the googlemock subproject" FORCE)
-    add_subdirectory(vendor/googletest)
+    add_subdirectory(${librariesPath}/googletest)
     set_target_properties(gtest gtest_main PROPERTIES
         FOLDER Libraries
     )
 
-
     # Specify where to find external libraries.
     # Example:
     # set(SFML "${CMAKE_CURRENT_SOURCE_DIR}/vendor/SFML")
-
-
-    # All other libraries can be pulled in without further configuration.
-    # OpenGL:
-    add_subdirectory(OpenGL/vendor)
 
 endif(ParentDirectory STREQUAL "")
 # Add subdirectories directly in this repository.
