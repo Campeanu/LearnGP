@@ -6,5 +6,5 @@ add_subdirectory(vendor)
 
 # Applications:
 
-# This contain a basic window that was crated using only GLFW
+# This contain a basic window that is created using only GLFW
 add_subdirectory(HelloWindowBasicGLFW)
