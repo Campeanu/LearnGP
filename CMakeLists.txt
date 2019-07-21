@@ -82,6 +82,7 @@ if(ParentDirectory STREQUAL "")
     # Specify where to find external libraries.
     # Example:
     # set(SFML "${CMAKE_CURRENT_SOURCE_DIR}/vendor/SFML")
+    set(OpenGL "${CMAKE_CURRENT_SOURCE_DIR}/OpenGL")
 
 endif(ParentDirectory STREQUAL "")
 # Add subdirectories directly in this repository.

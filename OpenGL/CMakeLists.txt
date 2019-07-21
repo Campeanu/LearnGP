@@ -14,3 +14,6 @@ add_subdirectory(HelloWindowWithGLAD)
 
 # Hello triangle !!! The process of drawing a triangle in moder OpenGl
 add_subdirectory(HelloTriangle)
+
+# Shaders ... In this project i will learn about shaders and how did they work.
+add_subdirectory(Shaders)
