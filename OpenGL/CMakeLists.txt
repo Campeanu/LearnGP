@@ -17,3 +17,6 @@ add_subdirectory(HelloTriangle)
 
 # Shaders ... In this project i will learn about shaders and how did they work.
 add_subdirectory(Shaders)
+
+# GUI
+add_subdirectory(GUI)
